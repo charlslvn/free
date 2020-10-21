@@ -8,55 +8,59 @@
     </title> 
     
     <style> 
+        .body {
+            margin: 0;
+            padding: 0;
+        }
         .header1 {
             font-style: normal;
-            font-family: Verdana;
-            font-size: 48;
+            font-family: "Verdana";
+            font-size: 72;
             text-align: center;
-            color: navy;
+            color: #fd7c6e;
+            padding-top: 30px;
         }
         .header2 {
             font-style: bold;
-            font-family: Verdana;
-            font-size: 26;
-            text-align: left;
+            font-family: "Verdana";
+            font-size: 42;
+            text-align: center;
             color: darkblue;
+            
         }
         .text {
-            font-family: Verdana;
-            font-size: 20
+            font-family: "Verdana";
+            font-size: 32;
+            padding-top: 0px;
+            
         } span {
             padding: 10px;
         }
         .aligned { 
             display: flex; 
-            align-items: center; 
-        } 
-           
-        span { 
-            padding: 20px; 
+            align-items: center;
         } 
     </style> 
     
 </HEAD>
     
-<BODY>
+<BODY class="body">
     
     <div style="background-color:#fdf4eb;"> 
     
-    <h1 class="header1">How is computed the score for proteins ?</h1>
+    <h1 class="header1">Scoring Insight</h1>
     
-    <h2 class="header2">The Japan Dietetic Association's Recommendation for Proteins</h2>
+    <h2 class="header2">The Japan Dietetic Association's Recommendation</h2>
     
     <div class="aligned"> 
         <a href="https://www.dietitian.or.jp/english/" target="_blank">
-            <img src="infoRessources/jda_en.png" alt="日本栄養士会" align="left" width="136" height="110">
+            <img src="infoRessources/jda_en.png" alt="日本栄養士会" align="left" width="136" height="110" style="padding-left: 15px; padding-right: 30px">
          </a> 
         
               
-        <span class="text"> According to the Daily Reference Intakes (DRIs) established by the Japanese Dietetic Association (JDA), the ideal amount of proteins that have to be taken daily is located between 13% and 20% of the total amount of calories. <br></span></div>
+        <div class="text"> According to the Daily Reference Intakes (DRIs) established by the Japanese Dietetic Association (JDA), the ideal amount of proteins that have to be taken daily is located between 13% and 20% of the total amount of calories. <br></div></div>
             
-        <span class="text">According to the JDA, such an amount aims to prevent the progression of life-style related deseases. <br><br></span> 
+        <div class="text" style="padding-left: 15px">   According to the JDA, such an amount aims to prevent the progression of life-style related deseases. <br><br></div> 
      
         
         </div>
@@ -66,16 +70,16 @@
     <br>
     
     
-    <h2 class="header2">Tabescore' Scoring Model for Proteins</h2>
+    <h2 class="header2">Protein Scoring Model Insight</h2>
     
-        <span class="text">
+        <div class="text">
             <ul>
-            <li>Proteins are considered as a positive nutrient. Then, the scoring for protein is increasing as long as the amount of proteins is significant. </li><br>
-            <li>A product with an amount of proteins entering in the lower bound defined by the JDA (i.e. the kcal equivalent of proteins represent at least 13% of the total calories of the product), is credited with a grade of at least 75/100 for the proteins scoring section.  </li><br>
-            <li>A product with an amount of proteins greater than or equal to the upper bound defined by the JDA (i.e. the kcal equivalent of proteins represent at least 20% of the total calories of the product), is credited with a grade of at least 99/100 for the proteins scoring section.</li><br>
+            <li>Proteins are considered as a positive nutrient. Therefore, the score for proteins increases as long as the nutrient value is large. </li><br>
+            <li>A product with an amount of proteins entering in the lower bound defined by the JDA (i.e. the kcal equivalent of proteins represent at least 13% of the total calories of the product), is credited with a grade of at least 75% for the proteins scoring section.  </li><br>
+            <li>A product with an amount of proteins greater than or equal to the upper bound defined by the JDA (i.e. the kcal equivalent of proteins represent at least 20% of the total calories of the product), is credited with a grade of at least 99% for the proteins scoring section.</li><br>
             </ul>
             
-        </span> 
+        </div> 
         
     
     <br>
@@ -86,8 +90,7 @@
         <h2 class="header2">Scoring Repartition</h2>
     
     <img src="infoRessources/Rplot.png" alt="Proteins Graph" width="100%">
-        
-        <br>
+    
     
         </div>
     
